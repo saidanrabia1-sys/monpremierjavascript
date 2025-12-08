@@ -58,5 +58,63 @@ let nom ="SAID";
         };
         console.log(client);
 
+        // Je déclare mon objet "joueurProfessionnel"
+        let joueurProfessieonel = {
+            nom: "Zinedine zidane" ,
+            nationalité :["Française et Algerienne"],
+            datedenaissance: "23/ 06 /1972",
+            Piedfort : "droit",
+            Poste : "Milieu offensif"
+
+        };
+
+        // J'affiche l'ensemble de l'objet joueurProfessionnel
+        console.log (joueurProfessieonel);
+
+        // J'affiche le nom de l'objet joueurProffessionnel
+        console.log(joueurProfessieonel.nom); //Je récupère mon 1er objet 
+
+        // J'affiche la nationalité de l'objet joueuerProfessionnel
+        console.log(joueurProfessieonel.nationalité);//Je récupère mon 2ème objet
+
+        // J'affiche le Piedfort de l'objet joueuerProfessionnel
+        console.log(joueurProfessieonel.Piedfort);  //Je récupère mon 3ème objet
+
+        // J'affiche le Poste de l'objet joueuerProfessionnel
+        console.log(joueurProfessieonel.Poste);//Je récupère mon 4ème objet
+
+        // J'affiche la date de naissance de l'objet joueuerProfessionnel
+        console.log(joueurProfessieonel.datedenaissance);// Je récupère  mon 5ème objet  
+
+        let deputeefrancaise = {
+            nom: "Estelle Youssouffa",
+            nationalité: "Française",
+            datedenaissance:"13/07/1978",
+            lieudenaissance:"Châtenay-Malabry (France)",
+            profession:"journaliste",
+            éléction:"19/06/2022",
+            Diplômée:"IUT de ToursUniversité du Québec",
+            Réélection:"30 juin 2024",
+            Circonscription:"1re de Mayotte",
+            Législature:"XVIe et XVIIe (Cinquième République)",
+            Groupepolitique:"LIOT",
+            Prédécesseur:"Ramlati Ali",
+            Partipolitique:"UDI (depuis 2022)",
+        };
+
         
-    
+        // Je déclare mon objet "deputeefrancaise"
+        console.log (deputeefrancaise);
+
+        console.log (deputeefrancaise.nom);//Je déclare mon 1er objet 
+        console.log(deputeefrancaise.éléction);//Je déclare mon 2ème objet
+        console.log(deputeefrancaise.nationalité);//Je déclare mon 3ème objet
+        console.log(deputeefrancaise.Groupepolitique);//Je déclare mon 4ème objet  
+        console.log(deputeefrancaise.Diplômée);// Je déclare mon 5ème objet 
+        console.log(deputeefrancaise.datedenaissance);//Je déclare mon 6ème objet 
+        console.log (deputeefrancaise.Législature);//Je déclare mon 7ème objet
+        console.log(deputeefrancaise.Partipolitique);//Je déclare mon 8ème objet
+        console.log(deputeefrancaise.Predecesseur);//Je déclare mon 9èmeobjet
+        console.log(deputeefrancaise.Circonscription); // Je déclare mon 10ème objet 
+        console.log(deputeefrancaise.lieudenaissance); // Je déclare mon 11ème objet 
+        console.log(deputeefrancaise.Réélection); // Je déclare mon 12sssème objet 
