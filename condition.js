@@ -41,9 +41,10 @@ if(ageTelspectateur >= 18 ) {// Si l'age est égal ou supérieur à 18
 
 // La condition avec IF ELSE
 let pointPermis = 12; 
-if (pointPermis == 12 ) {
+
+if (pointPermis == 12 ) { // Si 
     alert("vous avez un bonnus! ");
-    
-} else {
+
+} else { // Sinon 
     alert("vous avez des malus!");
-}
+};
