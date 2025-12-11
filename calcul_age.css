@@ -1,0 +1,49 @@
+
+form ,input,select{
+    background-color:whitesmoke;
+    border:solid;
+    padding: 10px ;
+    margin: 10px ;
+    width: 100%;
+
+    
+}
+
+body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 30px auto;
+        background-color: burlywood;
+    }
+
+label { font-weight: bold; }
+        input, select {
+        width: 100%;
+        padding: 8px 0;
+        margin: 8px 0;
+        
+    }
+
+#age {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: black;
+        
+    }
+
+#input[type=text] , [ type=date] {
+        padding: 8px ; /*Ajoute un espace à l'interieur de la balise <inpute>*/
+        margin: 15px; /* Ajoute un espace à l'exterieur de la balise <inpute>*/
+        height: 8px;
+       
+}
+
+div{ /* je selectionne tous les divs */
+  color: black;
+  display:inline;
+  margin-right: 15px;
+
+}
+
+
