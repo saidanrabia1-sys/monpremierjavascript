@@ -7,6 +7,7 @@
         <title>calcul.age</title>
         <script src="calcul_age.css"></script>
         <link rel="stylesheet" href="calcul_age.css">
+        <script src="dom_calcul_age.js" defer></script>
         
      <!--j'ai créé l'entete de mon fichier-->
    
@@ -17,7 +18,9 @@
     <form>
             <h2>Calcul automatique de l'âge</h2>
 
-        <div>
+        <div id="recensement">
+            <p id="paragraphe1">Nous récensons 1 appulation de Mayotte</p>
+        </div>
             <label>Nom :</label>
             <input type="text" id="nom">
             <label>Prénom :</label>
@@ -34,16 +37,19 @@
         </div>
         <br><br>
 
-            <label>Année de naissance :</label>
-            <input type="number" id="anneeNaissance" placeholder="">
+            <label for="anneeNaissance">Année de naissance :</label>
+            <input type="number" name="anneeNaissance" id="anneeNaissance">
+            <select id="anneeNaissance"></select>
+            <br><br>
 
-            <p id="age">Votre âge : —</p>
+            <p>
+            <div id="age">Votre âge : </div>
+            </p>
 
-        <br>
-        <div>
-          <input type="submit" value="Envoyer">
-        </div>
-        <br><br>
+            <br><br>
+            <div>
+            <input type="button" value="valider" id="bouttonValider"> 
+            </div>
 
     </form> 
      
