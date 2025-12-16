@@ -70,3 +70,52 @@ for (let i = 0; i < elementClassCommunes.length; i++){
     
 
 };
+
+/**
+ * J'insère des balises dans le fichier HTML grâce au code JavaScript  
+ */
+// Je créé un élement (balise) nommé <section>
+let elementSection = document.createElement("section");
+
+// Je récupère la balise <body> , puis je stocke <body> dans la variable elementBody.
+let elementBody = document.querySelector('body');
+
+elementBody.appendChild(elementSection);
+
+let nouveauTitre = document.createElement("h3");
+
+nouveauTitre.textContent ="Mon titre de la section";
+
+elementSection.appendChild(nouveauTitre);
+
+// Je créé un élement (balise) nommé <maman>
+let elementMaman = document.createElement('maman');
+
+elementBody.appendChild(elementMaman);
+
+// Dans la balise <maman> je crée une balise  <h3>
+let nouveauTitre2 = document.createElement("h3");
+
+nouveauTitre2.textContent = "Bonjour maman";
+
+elementSection.appendChild(nouveauTitre2);
+
+// Je crée une balise image 
+let elementImg = document.createElement("img");
+
+// Je lui ajoute un attribu src 
+elementImg.src = "image rsma.webp";
+
+// j'ajoute un attribut 
+elementImg.setAttribute("alt","RSMA Mayotte");
+
+// J'ajoute une liste de classe 
+elementImg.classList.add("img");
+elementImg.className = "image RSMA";
+
+// Supprimer une classe de l'élément img
+elementImg.classList.remove("image3");
+
+
+// J'insere l'image dans le body
+elementBody.appendChild(elementImg);
