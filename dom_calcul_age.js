@@ -46,3 +46,27 @@ console.log("elementDivRecensement :", elementDivRecensement);
 
 let elementPRecensement = document.querySelector("#paragraphe1");
 console.log(elementPRecensement);
+
+// Je récupère la liste des communes de Mayotte
+// Puis je stocke les communes dans la variable elementListCommunes 
+let elementsListCommunes = document.querySelector("#listCommunes");
+
+// J'affiche la liste des communes 
+console.log(elementsListCommunes);
+
+// J'utilise la boucle For pour parcourir la liste elementListCommunes 
+for(let i = 0; i < elementsListCommunes.lenght; i= i+1) {
+    console.log(elementsListCommunes[i]);
+};
+
+// J'utilise QuerySelectorAll pour récupéré tous les membres de la même classe
+let elementClassCommunes = document.querySelectorAll(".commune");
+console.log(elementClassCommunes);
+
+
+for (let i = 0; i < elementClassCommunes.length; i++){
+    console.log(elementClassCommunes[i]);
+    console.log(elementClassCommunes[i].innerText);
+    
+
+};
