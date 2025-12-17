@@ -5,8 +5,9 @@
 
         <meta charset="UTF-8">
         <title>calcul.age</title>
-        <script src="calcul_age.css"></script>
         <link rel="stylesheet" href="calcul_age.css">
+        <script src="age.js" defer></script>
+        <script src="evenement.js" defer></script>
         <script src="dom_calcul_age.js" defer></script>
         
     <!--j'ai créé l'entete de mon fichier-->
@@ -16,6 +17,14 @@
     <body>
         <section>
             <article>
+                <!-- J'affiche la date du jour et l'heure -->
+                 <div id="date" class="date">
+                    <button id="validerDate"> Date du jour </button>
+                    <span id="dateDuJour"></span>
+                </div>
+                <p>
+                    Date au format local : <span id="dateDuJourFormat2"></span>
+                </p>
                 <!--Je liste les communes de Mayotte-->
                 <h3 id="communes">Communes de Mayotte</h3>
                 <ol id="listCommunes">
@@ -63,19 +72,17 @@
 
                 <label for="anneeNaissance">Année de naissance :</label>
                 <input type="number" name="anneeNaissance" id="anneeNaissance">
-                <select id="anneeNaissance"></select>
-                <br><br>
-
-            <p>
-                <div id="age">Votre âge : </div>
-            </p>
 
             <br><br>
+
             <div>
                 <input type="button" value="valider" id="bouttonValider"> 
             </div>
 
             </form>
+            <br>   
+            <div id="resultat"></div>
+
         </article>
     </section>
     
