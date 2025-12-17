@@ -20,7 +20,7 @@ if (!anneeValeur || isNaN(anneeValeur)) {
 
 let age = calculAge(anneeValeur);
 
-divResultat.textContent = "Tu as " + age +" ans en " + anneeActuelle + ",";
+divResultat.textContent = "Bonjour  J'ai  " + age +" ans en " + anneeActuelle + ",";
 
 
 });
