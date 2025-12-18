@@ -23,7 +23,7 @@
                     <span id="dateDuJour"></span>
                  </div>
                  <br><br>
-                 
+
                  <div id="fonctionFleche"> 
                     <button id="boutonFleche">Fonction fléchée</button>
                  </div>
@@ -73,8 +73,9 @@
             </div>
             <br><br>
         <div>
-          <label for="anneeNaissance">Année de naissance :</label>
-          <input type="number" id="anneeNaissance">
+          <input type="number" id="anneeNaissance" placeholder="Année de naissance">
+          <button onclick="calculAge()"></button>
+          <p id="ageResultat"></p>
 
           <p id="messageUtilisateur">
             <span id="nomUtilisateur"></span>

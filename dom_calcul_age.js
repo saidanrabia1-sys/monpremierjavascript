@@ -1,16 +1,17 @@
 // Récupération des éléments du DOM
 function calculAge() {
-const anneeNaissance = document.getElementById("anneeNaissance").value;
-const ageResultat = document.getElementById("ageResultat");
+    const anneeNaissance = parseInt(document.getElementById("anneeNaissance").value);
+    const ageResultat = document.getElementById("ageResultat");
+    const anneeCourante = new Date().getFullYear();
 
-    if (isNaN (anneeNaissance) > 1900  && anneeNaissance <= new Date().getFullYear()){
-        const anneeCourante = new Date().getFullYear();
+    if (!isNaN(anneeNaissance) && anneeNaissance > 1900 && anneeNaissance <= anneeCourante) {
         const age = anneeCourante - anneeNaissance;
         ageResultat.textContent = age + " ans";
     } else {
-        ageResultat.textContent = "";
+        ageResultat.textContent = "Année invalide";
     }
 }
+
 /*Je récupère un élément (une balise) situé dans le fichier HTML
 (calcule_age.html). J'utilise l'identifiant pour trouver le bon élément.
 L'élément récupéé est ensuite stocké dans la variable
@@ -104,7 +105,7 @@ elementSection.appendChild(nouveauTitre2);
 let elementImg = document.createElement("img");
 
 // Je lui ajoute un attribu src 
-elementImg.src = "image rsma.webp";
+elementImg.src = "image rsma.web";
 
 // j'ajoute un attribut 
 elementImg.setAttribute("alt","RSMA Mayotte");

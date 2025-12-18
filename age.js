@@ -22,6 +22,5 @@ inputAnnee.addEventListener("input", function () {
     }
 
     let age = calculAge(anneeValeur);
-    divResultat.textContent =
-        "Tu as " + age + " ans en " + anneeActuelle + ".";
+    divResultat.textContent = "Tu as " + age + " ans en " + anneeActuelle + ".";
 });

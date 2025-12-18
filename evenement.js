@@ -89,8 +89,15 @@ form.addEventListener("submit", (event) => {
   const nom = document.querySelector("#nom").value;
   console.log("Nom saisi :", nom);
 
-  const prenom = event.target.value;
-  console.log(prenom);
-  
+   const prenom = document.querySelector("#prenom").value;
+   console.log("Prenom saisi :", prenom);
 
+   const anneeNaissance = document.querySelector("#anneeNaissance").value;
+   console.log("Annee saisi :", anneeNaissance);
+
+   const situation = document.querySelector("#situation").value;
+   console.log("Situation saisi :", situation);
+
+  
 });
+
