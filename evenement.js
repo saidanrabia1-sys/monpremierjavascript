@@ -26,14 +26,14 @@ elementButtonValiderDate.addEventListener("click", function() {
  */
 
 // 1. Tout d'aboord je récupere l'element  HTML qui sera associé à lélément KEYDOM
-let elementButonFleche = document.querySelector("#ButonFleche");
+let elementButonFleche = document.querySelector("#boutonFleche");
 
 
 /** 
  * 2. J'associe l'evénement KEYDOM mon élément HTML en utilisant la méthode addEvventListener().
  * A l'intérieur de la méthode addEventListener(), je passe une fonction fléchée comme suit ' () => {}'.
 */
-elementButonFleche.addEventListener("KEYDOWN", (event) => {
+elementButonFleche.addEventListener("keydom", (event) => {
     console.log("=== Je suis dans l' événement KEYDOWN===");
     console.log("Clé event : ", event.key); 
 });
@@ -47,7 +47,7 @@ elementButonFleche.addEventListener("KEYDOWN", (event) => {
 
 // 1. Tout d'aboord je récupere l'element  HTML qui sera associé à lélément CHANGE
 
-let elementInputNomForm = document.querySelector("Nom");
+let elementInputNomForm = document.querySelector("#nom");
 
 /** 
  * 2. J'associe l'evénement CHANGE à mon élément HTML en utilisant la méthode addEvventListener().
@@ -61,5 +61,36 @@ elementInputNomForm.addEventListener("change", (event) => {
     console.log(event.target.value);
     messageSalutation = `Bonjour ${event.target.value}`;
     elementSpanNomUtilisateur.textContent = messageSalutation;
+
+});
+
+/**
+ * Envoyer le formulaire
+ * Je vais récupérer les données saisis sur le formulaire :
+ * nom
+ * prenom
+ * situation
+ * année de naissance
+ */
+
+// je récupère la balise <form> </form> avec ses enfants; Ensuite, je stocke la balise dans la variable elementForm
+let elementForm = document.querySelector('form');
+console.log("elementForm :", elementForm);
+
+
+// J'assoccie l'événement 'submit'
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // empêche l'envoi du formulaire
+  console.log("Formulaire soumis !");
+
+ 
+  const nom = document.querySelector("#nom").value;
+  console.log("Nom saisi :", nom);
+
+  const prenom = event.target.value;
+  console.log(prenom);
+  
 
 });
