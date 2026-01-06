@@ -120,3 +120,22 @@ elementImg.classList.remove("image3");
 
 // J'insere l'image dans le body
 elementBody.appendChild(elementImg);
+
+
+let nom = prompt("Entrez votre nom :");
+let prenom = prompt("Entrez votre prénom :");
+let anneeNaissance = parseInt(prompt("Entrez votre année de naissance :"));
+
+let aujourdhui = new Date();
+let anneeActuelle = aujourdhui.getFullYear();
+
+
+let age = anneeActuelle - anneeNaissance;
+
+if (age < 18) {
+    console.log(nom + " " + prenom + ", vous êtes mineur.");
+} else {
+    console.log(nom + " " + prenom + ", vous êtes majeur.");
+}
+
+

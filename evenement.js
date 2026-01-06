@@ -57,12 +57,33 @@ let elementInputNomForm = document.querySelector("#nom");
 let messageSalutation; // Je déclare une variable vide.
 let elementSpanNomUtilisateur = document.querySelector("#nomUtilisateur");
 
+let elementInputAnneeNaissance = document.querySelector("#anneeNaissance");
+
+let elementSpanMessageAge = document.querySelector("#calcul-age")
+
+const date = new Date();
+
+function calculerAge(anneeNaissance) {
+  return date.getFullYear() - anneeNaissance;
+}
+
+
+
 elementInputNomForm.addEventListener("change", (event) => {
     console.log(event.target.value);
     messageSalutation = `Bonjour ${event.target.value}`;
     elementSpanNomUtilisateur.textContent = messageSalutation;
 
 });
+
+elementInputAnneeNaissance.addEventListener("change", (event) => {
+    console.log(event.target.value);
+    messageAge = ` Vous êtes agé de  ${calculAge(event.target.value)} ans`;
+    elementSpanMessageAge.textContent = messageAge;
+
+});
+
+
 
 /**
  * Envoyer le formulaire

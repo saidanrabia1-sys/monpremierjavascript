@@ -1,8 +1,8 @@
 
-let anneeActuelle = new Date().getFullYear();
+let anneeEncours = new Date().getFullYear();
 
 function calculAge(anneeNaissance) {
-    return anneeActuelle - anneeNaissance;
+    return anneeEncours - anneeNaissance;
 }
 
 let inputAnnee = document.getElementById("anneeNaissance");
@@ -16,11 +16,11 @@ inputAnnee.addEventListener("input", function () {
         return;
     }
 
-    if (anneeValeur > anneeActuelle || anneeValeur < 1900) {
+    if (anneeValeur > anneeEncours || anneeValeur < 1900) {
         divResultat.textContent = "";
         return;
     }
 
     let age = calculAge(anneeValeur);
-    divResultat.textContent = "Tu as " + age + " ans en " + anneeActuelle + ".";
+    divResultat.textContent = "Tu as " + age + " ans en " + anneeEncours + ".";
 });
